@@ -13,13 +13,20 @@ ratingNum.forEach(ratingDiv=>ratingDiv.addEventListener("click" ,changeColortran
 addRating(e)
 }
 
-submitButton.addEventListener("click",()=>{
-    ratingContainer.style.display="none"
-    thankSection.style.display="block"
-})
 
-function addRating(e){
-    rating.innerText =  e.target.textContent
-   
+
+function addRating(e) {
+    if (e && e.target && e.target.textContent) {
+        rating.innerText = e.target.textContent;
+        submitButton.addEventListener("click", () => {
+            ratingContainer.style.display = "none";
+            thankSection.style.display = "block";
+        });
+    } else {
+        thankSection.style.display = "none";
+    }
 }
+
+      
+
 
