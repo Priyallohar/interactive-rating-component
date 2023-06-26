@@ -142,3 +142,25 @@
     font-weight: 200;
     font-size: 0.9rem;
 }
+
+@media screen and (max-width:375px) {
+    .rating-container{
+        width: 335px;
+        height: 450px;
+     }
+     .rating_section{
+        margin: 40px;
+    }
+    .thank_section{
+        width: 335px;
+        height: 450px;
+    }
+    .thank_container{
+       justify-content: center;
+       align-items: center;
+    }
+    .thank_paragraph{
+        margin-top: 40px;
+        
+    }
+}
